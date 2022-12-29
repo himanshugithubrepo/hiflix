@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HIFLIX-homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=DynaPuff:wght@600&family=Figtree:wght@800&family=Montserrat:ital,wght@1,200&family=Nunito+Sans:wght@600&family=Overpass:wght@800&family=Special+Elite&family=Teko:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&family=Kalam:wght@700&family=Nerko+One&family=Poppins&family=Roboto+Condensed:wght@700&family=Rubik+Glitch&family=Russo+One&family=Sono:wght@800&family=Yanone+Kaffeesatz:wght@700&family=Yantramanav:wght@700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    html{
+      font-size: 62.5%;
+      background-color: #222222;
+    }
+    #container {
+      display: flex;
+      height: 10vh;
+      max-width: 100vw;
+    }
+    #logo {
+    height: auto;
+    width: 10vw;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: bolder;
+    color: #00A699;
+    font-size: 4rem;
+    padding: 1.6rem 1rem;
+    }
+    .nav_bar{
+      height: auto;
+      width: 30vw;
+    }
+    .nav_bar li {
+      list-style: none;
+      font-family: cursive;
+      font-weight: bold;
+      float: left;
+      padding: 0rem 1rem;
+      margin: 1.5rem 0rem;
+      font-size: 1.5rem;
+      color: whitesmoke;
+    }
+    .nav_bar li:hover {
+      cursor: pointer;
+      color: #00A699;
+      border-bottom: 0.3rem solid whitesmoke;
+    }
+    #icons i {
+      font-size: 2.2rem;
+      color: #00A699;
+      margin-top: 1.9rem;
+    }
+    #insta i{
+      font-size: 2.2rem;
+    }
+    #fb i{
+      font-size: 2.2rem;
+    }
+    #linkedin i{
+      font-size: 2.2rem;
+    }
+    #twitter i{
+      font-size: 2.2rem;
+    }
+    .login_button {
+      background-color: rgba(136, 102, 249, 0.653);
+      height: 3rem;
+      width: 9rem;
+      border-radius: 0.4rem;
+      font-weight: bold;
+      padding: 0.5rem;
+      text-align: center;
+      font-size: 1.8rem;
+      margin: 1.8rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .login_button a{
+      color: white;
+    }
+    .login_button:hover{
+      box-shadow: -5px -5px 10px 2px rgba(120, 82, 243, 0.653);
+    }
+    .notification_icon {
+      background-color: #429AEE;
+      height: 3rem;
+      width: 15rem;
+      padding: 0.5rem;
+      margin: 1.8rem;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      font-size: 2.5rem;
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      text-align: center;
+    }
+    .notification_icon:hover{
+      box-shadow: 5px 5px 10px 2px #3283cf;
+    }
+    #dialog_box1 {
+      width: 100%;
+      height: 40vw;
+      display: flex;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      scroll-padding: 0px;
+      border-radius: 0.8rem;
+      gap: 1.2rem;
+      background-size: cover;
+      overflow-y: hidden;
+    }
+    .dialog_box_name {
+      color: whitesmoke;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-left: 1.5rem;
+
+    }
+    .dialog_box2 {
+      display: flex;
+      width: 100%;
+      height: 2.5rem;
+      background-color: black;
+    }
+    footer {
+      background-color: #00A699;
+      color: whitesmoke;
+      margin-top: 3rem;
+      padding: 1rem;
+      font-size: 2rem;
+      font-family: 'Lora', serif;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    #navigation {
+      position: sticky;
+    }
+    .box1{
+        background-color: #232b2b;
+    }
+    .template{
+      display: flex;
+      width: 100%;
+      height: 34vh;
+      margin: 1.5rem;
+      scroll-snap-type: x mandatory;
+      scroll-padding: 2.4rem;
+      border-radius: 0.8rem;
+      gap: 1rem;
+      margin-top: 20px;
+      overflow-y: scroll;
+    }
+    .item{
+      flex: 0 0 100%;
+      padding: 2.4rem;
+      border-radius: 0.8rem;
+      scroll-snap-align: start;
+    }
+    .movies{
+      flex: 0% 0% 25%;
+      border-radius: 0.8rem;
+      height: 23rem;
+      width: 23rem;
+      scroll-snap-align: start;
+    }
+    a #home{
+      color: #00A699;
+      text-decoration: none;
+    }
+    a .remain{
+      color: whitesmoke;
+      text-decoration: none;
+    }
+    #icons{
+      display: flex;
+      margin-left: 59.5rem;
+    }
+    video{
+      height: 600px;
+      width: 1536px;
+      background-color: #00A699;
+    }
+    #foothead{
+      text-align: center;
+    }
+    #address{
+      text-align: center;
+    }
+    #footicon{
+      margin: auto;
+    }
+    #footicon i{
+      padding-right: 1rem;
+    }
+    #contact{
+      margin: auto;
+    }
+    #app{
+      margin: auto;
+    }
+    #app i{
+      padding-right: 1rem;
+    }
+    #social{
+      display: flex;
+      margin-top: 5rem;
+    }
+    #download{
+      display: flex;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <nav id="navigation">
+      <div id="container">
+        <div id="logo">
+          HI-FLIX
+        </div>
+        <div class="nav_bar">
+          <ul>
+            <a href="homepage.html" id="home"><li>Home</li></a>
+            <a href="series.html" class="remain"><li>Series</li></a>
+            <a href="movies.html" class="remain"><li>Movies</li></a>
+            <a href="feedback.html" class="remain"><li>Rate Us</li></a>
+          </ul>
+        </div>
+        <div id="icons">
+        <div id="search"> <i class="fa-solid fa-magnifying-glass" title="Search"></i></div>
+        <div class="login_button"><a href="signin.html">Sign in</a></div>
+        <div class="notification_icon"><a href="payment.html">Subcriptions</a></div>
+      </div>
+    </nav>
+    <section>
+      <div id="dialog_box1">
+        <video class="item" poster="mone.png" title="Click for Pause/Play" controls>
+          <source src="money.mp4" type="video/mp4">
+          
+        </video>
+        <video class="item" poster="post_st4.png" title="Click for Pause/Play" controls>
+          <source src="stranger.mp4" type="video/mp4">
+          
+        </video>
+        <video class="item" poster="pos_doc.png" title="Click for Pause/Play" controls>
+          <source src="doctor.mp4" type="video/mp4">
+          
+        </video>
+        <video class="item" poster="pos_brah.png" title="Click for Pause/Play" controls>
+          <source src="brahmastra.webm" type="video/webm">
+          
+        </video>
+      </div>
+      <div class="box1">
+      <div class="dialog_box_name">Trending Now</div>
+      <div class="template">
+        <img src="dem.png" id="bg1" class="movies"></img>
+        <img src="stranger4.png" id="bg1" class="movies"></img>
+        <img src="black.png" id="bg1" class="movies"></img>
+        <img src="brahm.png" id="bg1" class="movies"></img>
+        <img src="Sita Ramam.png" id="bg1" class="movies"></img>
+        <img src="shiddat.png" id="bg1" class="movies"></img>
+        <img src="anna.png" id="bg1" class="movies"></img>
+        <img src="The Lord Of The Rings..png" id="bg1" class="movies"></img>
+        <img src="naru.png" id="bg1" class="movies"></img>
+      </div>
+    </div>
+    <div class="box1">
+      <div class="dialog_box_name">Popular om Hiflix</div>
+      <div class="template">
+        <img src="doctorst.png" id="bg1" class="movies"></img>
+        <img src="stranger4.png" id="bg1" class="movies"></img>
+        <img src="kabir.png" id="bg1" class="movies"></img>
+        <img src="kgf.png" id="bg1" class="movies"></img>
+        <img src="blood.png" id="bg1" class="movies"></img>
+        <img src="f9.png" id="bg1" class="movies"></img>
+        <img src="chichore.png" id="bg1" class="movies"></img>
+        <img src="moon.png" id="bg1" class="movies"></img>
+        <img src="rrrw.png" id="bg1" class="movies"></img>
+      </div>
+    </div>
+    <div class="box1">
+      <div class="dialog_box_name">New to Hiflix</div>
+      <div class="template">
+        <img src="Sita Ramam.png" id="bg1" class="movies"></img>
+        <img src="black.png" id="bg1" class="movies"></img>
+        <img src="anna.png" id="bg1" class="movies"></img>
+        <img src="Tumbabad.png" id="bg1" class="movies"></img>
+        <img src="thorl1.png" id="bg1" class="movies"></img>
+        <img src="Kota Factory.png" id="bg1" class="movies"></img>
+        <img src="groot.png" id="bg1" class="movies"></img>
+        <img src="samshera.png" id="bg1" class="movies"></img>
+        <img src="Dybbuk.png" id="bg1" class="movies"></img>
+      </div>
+    </div>
+    <div class="box1">
+      <div class="dialog_box_name">k-Drama</k-Drama></div>
+      <div class="template">
+        <img src="squid.png" id="bg1" class="movies"></img>
+        <img src="dead.png" id="bg1" class="movies"></img>
+        <img src="okay.png" id="bg1" class="movies"></img>
+        <img src="stars.png" id="bg1" class="movies"></img>
+        <img src="twen.png" id="bg1" class="movies"></img>
+        <img src="love.png" id="bg1" class="movies"></img>
+        <img src="sun.png" id="bg1" class="movies"></img>
+        <img src="sea.png" id="bg1" class="movies"></img>
+        <img src="sum.png" id="bg1" class="movies"></img>
+      </div>
+    </div>
+    <div class="box1">
+      <div class="dialog_box_name">Anime</div>
+      <div class="template">
+        <img src="naru.png" id="bg1" class="movies"></img>
+        <img src="naru_new.png" id="bg1" class="movies"></img>
+        <img src="dem.png" id="bg1" class="movies"></img>
+        <img src="jujit.png" id="bg1" class="movies"></img>
+        <img src="death.png" id="bg1" class="movies"></img>
+        <img src="dor.png" id="bg1" class="movies"></img>
+        <img src="tran.png" id="bg1" class="movies"></img>
+        <img src="gho.png" id="bg1" class="movies"></img>
+        <img src="excep.png" id="bg1" class="movies"></img>
+      </div>
+    </div>
+    </section>
+    <footer>
+      <div id="foothead">Copyright&#169;2022&nbsp;hiflixindia.com</div>
+      <div id="footcontain">
+      <div id="address">11th Km Stone,
+        Amritsar - Jammu Highway,
+        NH-54, Amritsar - 143501(Punjab) India.</div>
+      <div id="social">
+      <div id="footicon">Follow us on
+      <div id="follow">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
+      <i class="fa-brands fa-twitter"></i>
+      </div>
+      </div>
+      <div id="contact">Contact us at
+        <div id="number"><i class="fa-solid fa-phone">0183-4187-25</i></div>
+      </div>
+      <div id="app">Download it from
+      <div id="download">
+       <div id="playstr"><i class="fa-brands fa-google-play"></i></div>
+       <div id="appstr"><i class="fa-brands fa-app-store"></i></div>
+      </div>
+      </div>
+    </div>
+</footer>
+  </body>
+</html>
