@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIFLIX-payment portal</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@800&family=Nunito+Sans:wght@600&family=Overpass:wght@800&family=Teko:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Russo+One&family=Yanone+Kaffeesatz:wght@700&family=Yantramanav:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Roboto+Condensed:wght@700&family=Russo+One&family=Yanone+Kaffeesatz:wght@700&family=Yantramanav:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&family=Kalam:wght@700&family=Roboto+Condensed:wght@700&family=Russo+One&family=Yanone+Kaffeesatz:wght@700&family=Yantramanav:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&family=Kalam:wght@700&family=Nerko+One&family=Roboto+Condensed:wght@700&family=Russo+One&family=Yanone+Kaffeesatz:wght@700&family=Yantramanav:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        width:100vw;
+        background:linear-gradient(to bottom right,#00A699,#429AEE);
+    }
+    .head{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 60px;
+        margin-top: 25px;
+        font-family: 'Roboto Condensed', sans-serif;
+
+    }
+    #box{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        margin: 75px 0px;
+    }
+    #right_box{
+    height: 65vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 25vw;
+    background:linear-gradient(to bottom right,#429AEE,#00A699);
+    }
+    section{
+        font-weight: bolder;
+    }
+    #left_box{
+        align-content: center;
+        height: 65vh;
+        width: 35vw;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        background-color: whitesmoke;
+        box-shadow: -5px -5px 10px #429AEE;
+    }
+    #headline{
+      color: black;
+      font-size: 50px;
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      width: 10vw;
+      text-align: center;
+      margin-left: 15vw;
+    }
+
+    #google_icon{
+        background-color: rgb(236, 232, 232);
+        border-radius: 10px;
+        margin-top: 40px;
+        font-family: "Nunito Sans", sans-serif;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    img{
+        height: 3.5vh;
+        width: 3.5vw;
+    }
+    span{
+        font-size: larger;
+        margin-left: 4px;
+        margin-right: 4px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    #facebook_icon{
+        background-color: rgb(236, 232, 232);
+        border-radius: 10px;
+        height: 25px;
+        margin-top: 50px;
+        font-family: "Nunito Sans", sans-serif;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 2px 2px;
+    }
+    h5{
+    text-align: center;
+    }
+    #first_name{
+    border-radius: 15px;
+    height: 5vh;
+    width: 25vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block; 
+    box-shadow: -1px -1px 10px #429AEE;
+    }
+    #last_name{
+    border-radius: 15px;
+    height: 5vh;
+    width: 25vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    box-shadow: -1px -1px 10px #429AEE;
+    }
+    #email{
+    border-radius: 15px;
+    height: 5vh;
+    width: 25vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    box-shadow: -1px -1px 10px #429AEE;
+    }
+    #password{
+    border-radius: 15px;
+    height: 5vh;
+    width: 25vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: -1px -1px 10px #429AEE;
+    }
+    #checkbox{
+    padding-top: 10em;
+    }
+    #confirm_password{
+    border-radius: 15px;
+    height: 5vh;
+    width: 25vw;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: -1px -1px 10px #429AEE
+    }
+    .data_entry{
+        position: relative;
+        left: 20px;
+    }
+    form{
+        justify-self: center;
+    }
+    #btn{
+    height: 5vh;
+    width: 25vw;
+    background:linear-gradient(to bottom right,#00A699,#429AEE);
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    margin: 10px 0px;
+    font-size: 2.3em;
+    font-family: 'Archivo Narrow', sans-serif;
+    }
+    #btn:hover{
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+    }
+    .tagline{
+        text-align: center;
+        margin: 100px 0px;
+    }
+    h1{
+        margin: 15px 0px;
+        color: #222222;
+        font-family: 'Nerko One', cursive;
+    }
+    .partition{
+        color: white;
+    }
+</style>
+<body>
+    <header>
+        <div class="head">
+            Sign Up form
+        </div>
+    </header>
+    <div id="box">
+    <div id="left_box">
+    <section>
+        <div id="headline">
+        Hello,Buddy!
+        </div>
+           
+    </section>
+    
+    <div class="data_enty">
+        <form>
+        <input type="text" id="first_name" placeholder="First Name">
+        <input type="text" id="last_name" placeholder="Last Name">
+        <input type="email" id="email" placeholder="Enter Email">
+        <input type="password" id="confirm_password" placeholder="Generate Password"><br>
+        <div id="combine">
+        <input type="checkbox" id="checkbox" name="confirmation" >
+        <label for="checkbox">I,thereby,declare that above details are correct </label><br>
+        </input>
+        </div>
+        </form>
+        <a href="payment.html"><div id="btn">CREATE ACCOUNT</div></a>
+    </div>
+    </div>
+    <div id="right_box">
+     <div class="tagline">
+        <h1>BUY PREMIUM</h1>
+            <h1 class="partition">AND</h1>
+        <h1>Enter to the universe of unltimate maddness and entertainment</h1>
+     </div>
+    </div>
+</div>
+</body>
+</html>

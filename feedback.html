@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HI-FLIX-feedback</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap"
+    />
+  </head>
+  <style>
+    body {
+      position: relative;
+      margin: auto;
+    }
+    #review {
+      font-size: 160px;
+      text-align: center;
+      height: 170px;
+      width: auto;
+      color: black;
+      background-image: url("images\\fe.jpg");
+      font-family: "Yanone Kaffeesatz", sans-serif;
+    }
+    .container {
+      position: relative;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      margin: auto;
+    }
+    .ratings {
+      position: relative;
+      height: 150px;
+      width: 150px;
+      display: flex;
+      margin: auto;
+      padding-top: 10px;
+    }
+    .ratings:hover {
+      cursor: pointer;
+    }
+    .one,
+    .two,
+    .three,
+    .four,
+    .five {
+      height: 30px;
+      width: 30px;
+      border: 1px solid black;
+      cursor: pointer;
+    }
+    .one:hover {
+      background-color: crimson;
+    }
+    .two:hover {
+      background-color: orange;
+    }
+    .three:hover {
+      background-color: rgb(214, 214, 20);
+    }
+    .four:hover {
+      background-color: greenyellow;
+    }
+    .five:hover {
+      background-color: green;
+    }
+    textarea {
+      display: block;
+      margin: auto;
+    }
+    span {
+      position: relative;
+      display: block;
+      margin-top: 20px;
+      width: 390px;
+      margin: auto;
+    }
+    .submit {
+      position: relative;
+      height: 40px;
+      width: 400px;
+      background-color: rgb(16, 59, 231);
+      color: whitesmoke;
+      margin: auto;
+      font-size: 25px;
+    }
+    a {
+      text-decoration: none;
+    }
+  </style>
+  <body>
+    <div class="header">
+      <div id="review">FEEDBACK</div>
+    </div>
+    <div class="container">
+      <p>Overall and Ratings</p>
+      <h3>Overall*</h3>
+      <div class="reviewbox">
+        <textarea rows="10" cols="50" placeholder="Your Suggestions"></textarea>
+        <span>Ratings Score*(out of 5)</span>
+        <div class="ratings">
+          <div class="one">
+            <b>1</b>
+          </div>
+          <div class="two">
+            <b>2</b>
+          </div>
+          <div class="three">
+            <b>3</b>
+          </div>
+          <div class="four">
+            <b>4</b>
+          </div>
+          <div class="five">
+            <b>5</b>
+          </div>
+        </div>
+        <a href="homepage.html"><div class="submit">Submit</div></a>
+      </div>
+    </div>
+  </body>
+</html>

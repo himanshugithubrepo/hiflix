@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Series-HI-FLIX</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&family=Kalam:wght@700&family=Nerko+One&family=Roboto+Condensed:wght@700&family=Rubik+Glitch&family=Russo+One&family=Sono:wght@800&family=Yanone+Kaffeesatz:wght@700&family=Yantramanav:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    html{
+      background-color: #222222;
+    }
+    #container {
+      display: flex;
+      height: 10vh;
+      width: 100%;
+    }
+    #logo {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-weight: bolder;
+      color: whitesmoke;
+      font-size: larger;
+      width: 15vh;
+    }
+    .nav_bar{
+      width: 60vh;
+    }
+    .nav_bar li {
+      list-style: none;
+      text-decoration: none;
+      font-family: cursive;
+      font-weight: bold;
+      float: left;
+      font-size:large;
+      padding-left: 3px;
+      padding-right: 4px;
+      margin-left: 13px;
+      margin-top: 10px;
+      color: black;
+    }
+    .nav_bar li:hover {
+      cursor: pointer;
+      color: whitesmoke;
+      border-bottom: 0.3rem solid black;
+    }
+    #search{
+        background-color: #00a699;
+        color: white;
+    }
+    .search_bar{
+        margin-left: 600px;
+    }
+    i {
+        font-size: 22px;
+        color: whitesmoke;
+        margin-top: 26px;
+      }
+    #section{
+        width: 100%;
+        height: 700px;
+        background-color: #00a699;
+    }
+    .box1{
+        background-color: #232b2b;
+        padding: 1.5rem;
+        margin: 1.5rem 0rem;
+    }
+    .nav_bar2 li{
+        list-style: none;
+        float: left;
+        margin-left: 10px;
+        color: black;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-weight: bold;
+    }
+    .nav_bar2{
+      width: 86vw;
+      height: 8vh;
+      background-color: #00a699;
+      margin-top: 1rem;
+      margin-left: 7.7rem;
+      text-align: center;
+      font-size: 2rem;
+    }
+    a #home{
+      color: #00a699;
+      text-decoration: none;
+    }
+    a .remain{
+      color: whitesmoke;
+      text-decoration: none;
+    }
+    .dialog_box{
+      height: 320px;
+      width: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      display: flex;
+    }
+    .headline_column{
+    padding-top: 100px;
+    height: 200px;
+    width: 100px;
+    background-color: #00a699;
+    margin-top: 20px;
+    padding-left: 25px;
+    }
+    .template{
+      display: flex;
+      overflow-x: scroll;
+      width: 90%;
+      height: 300px;
+      scroll-snap-type: x mandatory;
+      scroll-padding: 24px;
+      border-radius: 8px;
+      gap: 10px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    .movies{
+      flex: 0% 0% 25%;
+      border-radius: 8px;
+      height: 280px;
+      width: 300px;
+      scroll-snap-align: start;
+    }
+    img{
+      height: 300px;
+      width: 300px;
+    }
+    footer {
+      color: whitesmoke;
+      background-color: #232b2b;
+      margin-top: 10px;
+      text-align: center;
+      padding: 10px;
+      font-size: 20px;
+    }
+    #foothead{
+      text-align: center;
+    }
+    #address{
+      text-align: center;
+    }
+    #footicon{
+      margin: auto;
+    }
+    #footicon i{
+      padding-right: 1rem;
+    }
+    #contact{
+      margin: auto;
+    }
+    #app{
+      margin: auto;
+    }
+    #app i{
+      padding-right: 1rem;
+    }
+    #social{
+      display: flex;
+      margin-top: 5rem;
+    }
+    #download{
+      display: flex;
+      align-items: center;
+    }
+    #dialog_box1 {
+      width: 100%;
+      height: 85vh;
+      display: flex;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      scroll-padding: 0px;
+      border-radius: 0.8rem;
+      gap: 1.2rem;
+      background-size: cover;
+      overflow-y: hidden;
+    }
+    .item{
+      flex: 0 0 100%;
+      padding: 2.4rem;
+      border-radius: 0.8rem;
+      scroll-snap-align: start;
+    }
+    video{
+      height: 500px;
+      width: 1520px;
+      background-color: #00A699;
+    }
+    .category{
+      display: inline-block;
+      font-family: 'Sono', sans-serif;
+      color: whitesmoke;
+      padding: 0.5rem;
+    }
+  </style>
+  <body>
+<div id="section">
+    <div id="container">
+      <div id="logo">
+        <h1>HI-FLIX</h1>
+      </div>
+        <div class="nav_bar">
+          <ul>
+            <a href="homepage.html" id="home"><li>Home</li></a>
+            <a href="series.html" class="remain"><li>Series</li></a>
+            <a href="movies.html" class="remain"><li>Movies</li></a>
+            <a href="feedback.html" class="remain"><li>Rate Us</li></a>
+          </ul>
+        </div>
+        <div class="search_bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <div id="dialog_box1">
+      <video class="item" poster="images\pos_moom1.png" title="Click for Pause/Play" controls>
+        <source src="videos/vid_moon.mp4" type="video/mp4">
+      </video>
+      <video class="item" poster="images\pos_squid.png" title="Click for Pause/Play" controls>
+        <source src="videos/vid_squid.mp4" type="video/mp4">
+      </video>
+      <video class="item" poster="images\pos_love.png" title="Click for Pause/Play" controls>
+        <source src="videos/vid_love.mp4" type="video/mp4">
+      </video>
+      <video class="item" poster="images\pos_kota.png" title="Click for Pause/Play" controls>
+        <source src="videos/vid_kota.mp4" type="video/webm">
+      </video>
+      <video class="item" poster="images\twen.png" title="Click for Pause/Play" controls>
+        <source src="videos/vid_twen.mp4" type="video/webm">
+      </video>
+    </div>
+</div>
+<div class="box1">
+<div class="nav_bar2">
+      <span class="category">Action</span>
+</div>
+<div class="dialog_box">
+  <div class="headline_column">
+      <h2>Top Picks</h2>
+  </div>
+      <div class="template">
+        <img src="images\D:\html_projects\hiflix_project\images\mone.png" class="movies"></img>
+        <img src="images\D:\html_projects\hiflix_project\images\moon.png" class="movies"></img>
+        <img src="images\D:\html_projects\hiflix_project\images\stranger4.png" class="movies"></img>
+        <img src="images\D:\html_projects\hiflix_project\images\GOT.png" class="movies"></img>
+        <img src="images\D:\html_projects\hiflix_project\images\The Family Man..png" class="movies"></img>
+        <img src="images\D:\html_projects\hiflix_project\images\Mirzapur...png" class="movies"></img>
+    </div>
+</div>
+</div>
+<div class="box1">
+<div class="nav_bar2">
+  <span class="category">Science and Fiction</span>
+</div>
+<div class="dialog_box">
+<div class="headline_column">
+  <h2>Top Picks</h2>
+</div>
+  <div class="template">
+    <img src="images\loki.png" class="movies"></img>
+    <img src="images\wanda.png" class="movies"></img>
+    <img src="images\squid.png" class="movies"></img>
+    <img src="images\Wednesday.png" class="movies"></img>
+    <img src="images\The Lord Of The Rings.png" class="movies"></img>
+    <img src="images\The Sandman.png" class="movies"></img>
+  </div>
+</div>
+</div>
+<div class="box1">
+<div class="nav_bar2">
+  <span class="category">Educational</span>
+</div>
+<div class="dialog_box">
+<div class="headline_column">
+  <h2>Top Picks</h2>
+</div>
+  <div class="template">
+    <img src="images\Kota Factory.png" class="movies"></img>
+    <img src="images\Aspirants.png" class="movies"></img>
+    <img src="images\Rocket Boys.png" class="movies"></img>
+    <img src="images\Panchayat..png" class="movies"></img>
+    <img src="images\Hostel Daze.png" class="movies"></img>
+    <img src="images\Campus Diaries.png" class="movies"></img>
+  </div>
+</div>
+</div>
+<div class="box1">
+<div class="nav_bar2">
+  <span class="category">Romantic</span>
+</div>
+<div class="dialog_box">
+<div class="headline_column">
+  <h2>Top Picks</h2>
+</div>
+  <div class="template">
+    <img src="images\stars.png" class="movies"></img>
+    <img src="images\Mismatched.png" class="movies"></img>
+    <img src="images\sun.png" class="movies"></img>
+    <img src="images\love.png" class="movies"></img>
+    <img src="images\Flames..png" class="movies"></img>
+    <img src="images\twen.png" class="movies"></img>
+  </div>
+</div>
+</div>
+<footer>
+  <div id="foothead">Copyright&#169;2022&nbsp;hiflixindia.com</div>
+  <div id="footcontain">
+  <div id="address">11th Km Stone,
+    Amritsar - Jammu Highway,
+    NH-54, Amritsar - 143501(Punjab) India.</div>
+  <div id="social">
+  <div id="footicon">Follow us on
+  <div id="follow">
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-facebook-f"></i>
+  <i class="fa-brands fa-linkedin-in"></i>
+  <i class="fa-brands fa-twitter"></i>
+  </div>
+  </div>
+  <div id="contact">Contact us at
+    <div id="number"><i class="fa-solid fa-phone">0183-4187-25</i></div>
+  </div>
+  <div id="app">Download it from
+  <div id="download">
+   <div id="playstr"><i class="fa-brands fa-google-play"></i></div>
+   <div id="appstr"><i class="fa-brands fa-app-store"></i></div>
+  </div>
+  </div>
+</div>
+</footer>
+</body>
+</html>

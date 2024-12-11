@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap"
+    />
+    <style>
+      html{
+        margin: 0;
+        padding: 0;
+
+      }
+      body {
+        background-image: url('images\\pro.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.9;
+
+      }
+      #logo {
+        width: 100vw;
+        color: #00A699;
+        text-align: center;
+        margin: auto;
+      }
+      #sign_in_box {
+        background-color: black;
+        text-align: center;
+        padding-bottom: 70px;
+        height: 500px;
+        width: 440px;
+        margin-left: 550px;
+        color: whitesmoke;
+        font-size: x-large;
+        margin: auto;
+        border-radius: 15px;
+        opacity: 0.7;
+      }
+      h2{
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-weight: 900;
+      color: #00A699;
+      font-size: 50px;
+      }
+      section{
+        display: flex;
+      }
+      #sign_in_box input[type="button"]{
+      background-color: #00A699;
+      color: black;
+      border-radius: 10px;
+      cursor: pointer;
+      height: 50px;
+      width: 250px;
+      font-weight: bold;
+      }
+      #sign_in_box input[type="button"]:hover{
+        background-color: white;
+      }
+      #sign_in_box input[type="text"]{
+      background-color: whitesmoke;
+      color: black;
+      border-radius: 10px;
+      padding-block: 5px;
+      padding-left: 4px;
+      height: 25px;
+      width: 250px;
+      }
+      .details_contents{
+        margin-top: 50px;
+      }
+      #sign_in_box input[type="password"]{
+      background-color: whitesmoke;
+      color: black;
+      border-radius: 10px;
+      padding-block: 5px;
+      padding-left: 4px;
+      height: 25px;
+      width: 250px;
+      }
+      label{
+        font-size: 15px;
+        color: black;
+      }
+      input [type="checkbox"]{
+        margin-right: 200px;
+      }
+      .sign_up{
+        font-size: 20px;
+        font-family: cursive;
+        color: #00A699;
+        margin-top: 50px;
+      }
+      a{
+        text-decoration: none;
+        color: whitesmoke;
+      }
+      label{
+        color: white;
+      }
+      .login{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+    <div id="logo"><h2>HI-FLIX</h2></div>
+  </header>
+  <section>
+    <div id="sign_in_box">
+        <br>
+            <div><h1>Login Details*</h1></div>
+            <div class="details_contents">
+            <input type="text" placeholder="Enter E-mail" name="E-mail">
+            <br>
+            <br>
+            <input type="password" placeholder="Password" name="Password">
+            <br>
+            <br>
+            <a class="login" href="index.html" title="Click on the button for Signin"> <input type="button" value="Login" name="storage"></a>
+          <input type="checkbox" id="checkbox" name="confirmation" >
+                       <label for="checkbox">Remember me</label><br>
+          </input>
+        </div>
+        <div class="sign_up">
+          New to HIFLIX?<span style="color: whitesmoke;"><a href="signup.html">
+            Sign up</a></span>
+        </div>
+        </div>
+      </section>
+  </body>
+</html>

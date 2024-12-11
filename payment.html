@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HI-FLIX-PaymentPortal</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap"
+    />
+
+</head>
+<style>
+    body{
+        background-color: whitesmoke;
+    }
+    .head{
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        text-align: center;
+        font-size: 100px;
+        margin-left: 170px;
+
+    }
+    #logo{
+        color: whitesmoke;
+        background-color: #00A699;
+    }
+    #sub{
+        color: rgb(26, 26, 108);
+    }
+    .plan{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 210px;
+    }
+    #opt{
+        background-color: rgb(215, 210, 210);
+        margin-left: 452px;
+        margin-right: 100px;
+        padding: 7px;
+        width: 697px;
+    }
+    .sub1{
+        margin-right: 140px;
+    }
+    .pay{
+        margin-left: 455px;
+        margin-right: 100px;
+        background-color: rgb(215, 210, 210);
+        padding: 7px;
+        margin-top: 10px;
+    }
+    .plan1{
+        margin-left: 455px;
+        margin-right: 100px;
+        text-align: left;
+        background-color: #00A699;
+    }
+    #number{
+        display: block;
+        margin-left: 455px;
+        height: 30px;
+        width: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 3px solid #00A699;
+    }
+    #month{
+        display: block;
+        margin-left: 455px;
+        height: 30px;
+        width: 303px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 3px solid #00A699;
+    }
+    #cvv{
+        display: block;
+        margin-left: 455px;
+        height: 30px;
+        width: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 3px solid #00A699;
+
+    }
+    .paybtn{
+     height: 30px;
+     width: 200px;
+     background-color: #00A699;
+     margin-left: 450px;
+     padding-top: 7px;
+     margin-top: 20px;
+    }
+    .paybtn:hover {
+        cursor: pointer;
+        background-color: #07786e;
+    }
+
+    .checkbox{
+        display: block;
+        margin-right: 230px;
+    }
+    .plan{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div class="head">
+        <span id="logo">HI-FLIX</span><span id="sub">Subscription</apan> </div>
+    </div>
+    <div class="plan">
+        <div id="opt">Plan Options</div>
+       <div class="sub1">Choose Plan for subsciption</div>
+    <div class="plan1">
+        <input type="radio" id="plan1" name="plan" value="monthly">
+        <label for="plan1">1 month plan for &#8377;159</label><br>
+        <input type="radio" id="plan2" name="plan" value="3 month plan">
+        <label for="plan2">3 month plan for &#8377;460</label><br>
+        <input type="radio" id="plan3" name="plan" value="6 month plan">
+        <label for="plan3">6 month plan for &#8377;900</label><br>
+        <input type="radio" id="plan4" name="plan" value="yearly plan">
+        <label for="plan3">yearly plan for &#8377;1700</label><br>
+    </div>
+    <div class="pay">Payment Options</div>
+     <input type="NUMBER" id="number" placeholder="Card Number">
+     <input type="month" id="month" placeholder="MM/YY">
+     <input type="password" id="cvv" placeholder="CVV">
+     <div class="checkbox"><input type="checkbox" id="checkbox" name="confirmation" >
+     <label for="checkbox">Remember me</label>
+    </div>
+     <a href="homepage.html"><div class="paybtn">PAY </div></a>
+</div>
+</body>
+</html>
